@@ -1,0 +1,30 @@
+{
+  "name": "muramasa-apis",
+  "version": "1.0.0",
+  "description": "REST APIs for Muramasa",
+  "main": "index.js",
+  "type": "module",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "set DEBUG=app:* & node --env-file .env --watch index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jjmillar/muramasa-apis.git"
+  },
+  "author": "JJ Studio",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jjmillar/muramasa-apis/issues"
+  },
+  "homepage": "https://github.com/jjmillar/muramasa-apis#readme",
+  "dependencies": {
+    "debug": "^4.3.7",
+    "express": "^4.21.1",
+    "http-errors": "^2.0.0",
+    "mongodb": "^6.10.0"
+  }
+}
