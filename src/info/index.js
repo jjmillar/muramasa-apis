@@ -1,9 +1,9 @@
 import express from 'express';
-import { InfoController } from './controller';
+import { InfoController } from './controller.js';
 
 const router = express.Router();
 
-export const InfoApi = (app) => {
+export default function InfoApi (app) {
   router
     .get('/', InfoController.getInfo);
 

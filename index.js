@@ -1,6 +1,6 @@
 import express from 'express';
 import debug from 'debug';
-import InfoApi from './src/info';
+import InfoApi from './src/info/index.js';
 
 const app = express();
 const log = debug('app:main');
