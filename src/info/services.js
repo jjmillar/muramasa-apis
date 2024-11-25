@@ -1,7 +1,7 @@
 import { Database } from "../database/index.js";
 import { ObjectId } from "mongodb";
 
-const COLLECTION = 'info';
+const COLLECTION = 'Info';
 
 const getAll = async () => {
   const collection = await Database(COLLECTION);

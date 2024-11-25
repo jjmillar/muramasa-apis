@@ -8,7 +8,7 @@ let connection = null;
 export const Database = (collection) => new Promise(async (resolve, reject) => {
   try {
     if (!connection) {
-      const client = new MongoClient(process.env.MONGO_URL);
+      const client = new MongoClient(process.env.MONGO_URI);
       connection = await client.connect();   
       log('Connected to MongoDB');   
     }
